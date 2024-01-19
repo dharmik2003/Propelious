@@ -1,1 +1,0 @@
-var A="update value, IIFE not store value in Global level";
