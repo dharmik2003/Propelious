@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traforms</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: lightblue;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        
+        /*45deg rotate*/
+        #box1{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+
+            transition: all 1s linear 1s;           
+
+        } #box1:hover{
+            transform: rotate(45deg);
+        }
+
+        /*360 rotate*/
+        #box2{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;           
+
+        }
+        #box2:hover{
+            transform: rotate(360deg);
+        }
+        #box3{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;  
+        }
+        #box3:hover{
+            transform: scale(0.5)
+        }
+        #box4{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box4:hover{
+            transform: scale(1.5)
+        }
+        /*cross*/
+        #box5{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box5:hover{
+            transform: skew(15deg)
+        }
+
+        /*cross*/
+        #box6{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box6:hover{
+            transform: skew(-15deg)
+        }
+        
+        /*x axis move left*/
+        #box7{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box7:hover{
+            transform: translate(-100px)
+        }
+
+        /*x axis move right*/
+        #box8{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box8:hover{
+            transform: translate(100px)
+        }
+
+        /*Y axis bottom*/
+        #box9{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box9:hover{
+            transform: translate(0px,100px)
+        }
+
+        /*x axis move up*/
+        #box10{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box10:hover{
+            transform: translate(0px,-100px)
+        }
+
+        /*  transform: translate(100px,-100px) cross go*/
+
+         /*x,y cross up*/
+         #box11{
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral ;
+            border: 2px solid black;
+            margin: 10px;
+            transition: all 1s linear 1s;
+        }
+        #box11:hover{
+            transform: translate(100px,-100px)
+        }
+
+        /*  transform: translate(100px,-100px) cross go*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">Hello</div>
+        <div id="box2">How</div>
+        <div id="box3">Are</div>
+        <div id="box4">You</div>
+        <div id="box5">Hello</div>
+        <div id="box6">How</div>
+        <div id="box7">Are</div>
+        <div id="box8">You</div>
+        <div id="box9">Are</div>
+        <div id="box10">You</div>
+        <div id="box11">You</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's try</title>
+    <style>
+        .container{
+            height: 97vh;
+            width: 97vw;
+            background-color: bisque;            
+            border: 5px solid black;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+
+        .items{
+
+            border: 2px solid white;
+            display: flex;
+            font-size: 20px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background-color: green;
+        }
+        .box2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: green;
+        }
+        .box3{
+            background-color:red ;
+        }
+        .box4{
+            background-color: goldenrod;
+        }
+        .box5{
+            background-color:red ;
+        }
+        .box7{
+            background-color:red ;
+        }
+        .box6{
+            grid-row-start: 2;
+            background-color: green;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .box8{
+            background-color: goldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items box1">Box1</div>
+        <div class="items box2">Box2</div>
+        <div class="items box3">Box3</div>
+        <div class="items box4">Box4</div>
+        <div class="items box5">Box5</div>
+        <div class="items box6">Box6</div>
+        <div class="items box7">Box7</div>
+        <div class="items box8">Box8</div>
+    </div>
+</body>
+</html>

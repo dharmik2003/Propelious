@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container {
+            background-color: beige;
+            border: 5px solid black;
+            width: 100vw;
+            height: 100vh;
+            position: relative; /* Added position property */
+        }
+
+        #box {
+            height: 50px;
+            width: 150px;
+            border: 2px solid orangered;
+            margin: 20px;
+            padding: 20px;
+            background-color:blue;
+            border-radius: 5px;
+            position: absolute; /* Added position property */
+            /* animation */
+
+            /* animation-name: rightmovement;
+            animation-duration: 5s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: linear;
+            position: relative; */
+            /* animation-delay: 2s; */
+            /**continue run*/
+            /* animation-direction: alternate; */
+            /* animation-fill-mode:forwards   */
+
+            /*short notation*/
+
+            animation: 5s linear 1s infinite alternate none running rightmovement;
+        }
+
+        @keyframes rightmovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 1300px; /* Adjusted the left value */
+            }
+        }
+        #cir{
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            top: 40%;
+            left: 40%;
+            position: relative;
+            border: 2px solid blue;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running cirmovement;
+
+        }
+
+        @keyframes cirmovement {
+            0%{
+                top: 3%;
+                left: 5%;
+
+            }30%{
+                top: 5%;
+                left: 90%;
+            }60%{
+                top: 70%;
+                left: 10%;
+
+            }100%{
+                top: 75%;
+                left: 90%;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+        <div id="cir"></div>
+    </div>
+</body>
+</html>
