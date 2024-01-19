@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists & Tables</title>
+</head>
+<body>
+    <!-- Unordered Lists {Disc Bullets} -->
+    <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+    </ul>
+
+    <!-- Unordered Lists {Color change} -->
+    <ul style="color: blue; font-size: 16px;">
+        <li>Blue Item</li>
+        <li>Big Item</li>
+        <li>Styled Item</li>
+    </ul>
+    
+    <!-- Unordered Lists {light circule Bullets } -->
+    <ul style="list-style-type: circle;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Unordered Lists {light Square Bullets } -->
+    <ul style="list-style-type: square;">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Unordered Lists {Image as Bullets} -->
+    
+    <style>
+        .custom-list {
+            /* list-style-image: url('bullet.jpeg');
+            height: 1px;
+            width: 1px; */
+        }
+    </style>
+
+    <ul class="custom-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    
+
+    <!-- ordered Lists -->
+    <ol>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+    </ol>
+
+
+    <!-- Nested Lists -->
+    <ol>
+        <li>Item-1</li>
+        <li>
+            Item-2
+            <ul>
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+            </ul>
+        </li>
+        <li>Item-3</li>
+        <li>Item-4</li>
+        <li>Item-5</li>
+    </ol>
+
+
+    <!-- Tables -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dharmik</td>
+                <td>R</td>
+                <td>26</td>
+            </tr>
+            <tr> 
+                <td  rowspan="2">Dharmik</td>
+                <td>R</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>26</td>
+            </tr>   
+            <tr>
+                <td>Dharmik</td>
+                <td colspan="2">R</td>   
+            </tr>      
+        </tbody>
+    </table>
+
+
+</body>
+</html>
